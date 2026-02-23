@@ -61,7 +61,14 @@
                     <div class="hero-stats">
                         <div class="stat">
                             <strong>500+</strong>
-                            <span>Usuários Ativos</span>
+                            <span style="display:flex;align-items:center;gap:0.5rem;">
+                                <span class="stat-avatars" style="display:flex;align-items:center;gap:0.2rem;">
+                                    <span title="Gustavo" style="background:#F59E0B;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1rem;box-shadow:0 1px 4px #0001;">G</span>
+                                    <span title="Matheus" style="background:#10B981;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1rem;box-shadow:0 1px 4px #0001;">M</span>
+                                    <span title="Willian" style="background:#6366F1;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:1rem;box-shadow:0 1px 4px #0001;">W</span>
+                                </span>
+                                <span style="margin-left:0.5rem;"> Faça como o Gustavo, o Matheus e o Willian</span>
+                            </span>
                         </div>
                         <div class="stat">
                             <strong>R$ 2M+</strong>
@@ -74,32 +81,34 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="dashboard-preview">
-                        <div class="preview-card card-1">
-                            <div class="card-header">
-                                <span class="icon">💰</span>
-                                <span class="label">Saldo Total</span>
+                    <div class="hero-img-fade">
+                        <img 
+                            src="assets/fotohumano.png" 
+                            alt="Usuária usando o GreenPay"
+                            class="hero-person-img"
+                        >
+                        <!-- Cards flutuantes -->
+                        <div class="hero-card hero-card-1">
+                            <span class="card-icon">💰</span>
+                            <div>
+                                <div class="card-title">Saldo do mês</div>
+                                <div style="display:flex;align-items:center;gap:0.5rem;">
+                                    <span class="card-value" style="font-size:0.88rem;">R$ 3.145,00</span>
+                                    <span class="card-trend positive" style="font-size:0.82rem;margin-left:0.3rem;">+12% ↑</span>
+                                </div>
                             </div>
-                            <div class="card-value">R$ 45.287,50</div>
-                            <div class="card-trend positive">+12.5% este mês</div>
                         </div>
-                        <div class="preview-card card-2">
-                            <div class="card-header">
-                                <span class="icon">📊</span>
-                                <span class="label">Investimentos</span>
+                        <div class="hero-card hero-card-2">
+                            <span class="card-icon">🎯</span>
+                            <div>
+                                <div class="card-title">Meta da viagem</div>
+                                <div class="card-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 68%"></div>
+                                    </div>
+                                    <span class="progress-label">68%</span>
+                                </div>
                             </div>
-                            <div class="card-value">R$ 28.450,00</div>
-                            <div class="card-trend positive">+8.3%</div>
-                        </div>
-                        <div class="preview-card card-3">
-                            <div class="card-header">
-                                <span class="icon">🎯</span>
-                                <span class="label">Metas</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: 75%"></div>
-                            </div>
-                            <div class="card-trend">3 de 4 concluídas</div>
                         </div>
                     </div>
                 </div>
@@ -122,15 +131,15 @@
                     <div class="feature-points">
                         <div class="point">
                             <span class="check-icon">✓</span>
-                            <span>Registre receitas e despesas rapidamente</span>
+                            <span>Chega de esquecer gastos: registre tudo em segundos</span>
                         </div>
                         <div class="point">
                             <span class="check-icon">✓</span>
-                            <span>Categorização automática inteligente</span>
+                            <span>Pare de perder tempo categorizando: o app faz por você</span>
                         </div>
                         <div class="point">
                             <span class="check-icon">✓</span>
-                            <span>Importe extratos do seu banco</span>
+                            <span>Nunca mais se perca nos extratos: importe direto do banco</span>
                         </div>
                     </div>
                 </div>
@@ -778,6 +787,9 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content">
+                <div class="cta-microstory" style="background:rgba(255,255,255,0.7);border-radius:1rem;padding:1rem 1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,0.04);font-size:1.05rem;">
+                    <span style="font-style:italic; color:#3b3b3b;">"Semana passada a Juliana pagou a última parcela do cartão. Foi com o GreenPay que ela enxergou o caminho."</span>
+                </div>
                 <h2>Comece hoje mesmo</h2>
                 <p>Junte-se a centenas de pessoas que já estão no controle das suas finanças</p>
                 <div class="cta-buttons">
