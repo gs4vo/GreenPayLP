@@ -218,8 +218,9 @@ const updatePrices = (isAnnual) => {
 // Track CTA clicks for analytics
 document.querySelectorAll('.btn-primary, .btn-outline, .btn-secondary').forEach(button => {
     button.addEventListener('click', (e) => {
-        const buttonText = e.target.textContent.trim();
-        const buttonHref = e.target.getAttribute('href');
+        const buttonElement = e.currentTarget;
+        const buttonText = buttonElement.textContent.trim();
+        const buttonHref = buttonElement.getAttribute('href');
         
         // Analytics tracking would go here
         console.log('Button clicked:', buttonText, buttonHref);
