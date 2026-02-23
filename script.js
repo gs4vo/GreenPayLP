@@ -5,9 +5,18 @@ const navActions = document.querySelector('.nav-actions');
 
 if (mobileMenuToggle) {
     mobileMenuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        const isActive = navLinks.classList.toggle('active');
         navActions.classList.toggle('active');
         mobileMenuToggle.classList.toggle('active');
+        // O botão hamburguer SEMPRE aparece, só muda o ícone (animação)
+    });
+    // Se clicar em qualquer link do menu, fecha o menu e reseta o botão
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            navActions.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+        });
     });
 }
 
